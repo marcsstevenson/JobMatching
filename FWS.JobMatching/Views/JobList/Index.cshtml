@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Header
+{
+    @Scripts.Render("~/bundles/JobList")
+
+}
+<h1>Jobs</h1>
+
+<div ng-app="JobListApp">
+
+    <a href="#/">Home</a>
+    <a href="#/List">All Jobs</a>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+            your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Our Website Content Goes Here -->
+    <div ng-view></div>
+</div>
