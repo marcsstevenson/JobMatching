@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var app = angular.module('JobListApp', ['ngRoute']);
+    var app = angular.module('JobListApp', ['ngRoute', 'angular-loading-bar', 'ui.bootstrap']);
 
     /**
      * Configure the Routes

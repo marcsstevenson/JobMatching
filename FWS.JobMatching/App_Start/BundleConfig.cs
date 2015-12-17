@@ -17,6 +17,7 @@ namespace FWS.JobMatching
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/loading-bar.css",
                       "~/Content/site.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/base").Include(
@@ -25,6 +26,7 @@ namespace FWS.JobMatching
                         , "~/Scripts/jquery-{version}.js"
                         , "~/Scripts/angular.js"
                         , "~/Scripts/angular-route.js"
+                        , "~/Scripts/loading-bar.js"
                         , "~/Scripts/moment.js"
                         , "~/Scripts/angular-ui/ui-bootstrap.js"
                         , "~/Scripts/angular-ui/ui-bootstrap-tpls.js"
