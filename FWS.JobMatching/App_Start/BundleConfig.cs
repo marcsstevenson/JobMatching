@@ -12,9 +12,7 @@ namespace FWS.JobMatching
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include());
-
+            
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/loading-bar.css",
@@ -30,12 +28,10 @@ namespace FWS.JobMatching
                         , "~/Scripts/moment.js"
                         , "~/Scripts/angular-ui/ui-bootstrap.js"
                         , "~/Scripts/angular-ui/ui-bootstrap-tpls.js"
-                        ));
-
-            bundles.Add(new ScriptBundle("~/bundles/JobList").Include(
-                        "~/Scripts/Site/JobList/*.js"
-                        //ToDo - remove the mocking
+                        , "~/Scripts/Site/JobList/*.js"
+                         //ToDo - remove the mocking
                         , "~/Scripts/Site/JobList/Services.Mock/*.js"
+                        , "~/Scripts/chance.js"
                         ));
         }
     }
